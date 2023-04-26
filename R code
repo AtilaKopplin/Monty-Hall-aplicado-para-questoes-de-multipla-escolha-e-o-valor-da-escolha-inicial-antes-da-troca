@@ -1,0 +1,41 @@
+set.seed(123)
+n <- 10000
+sim1_stick_2wrong<-replicate(n,{
+    doors<-c("A","B","C","D","E")
+    prize_door<-sample(doors,1)
+    first_choice<-sample(doors,1)
+    wrong_doors<-doors[doors!=prize_door & doors!=first_choice]
+    revealed_wrong_doors<-sample(wrong_doors,2)
+    remaining_doors<-doors[!(doors %in% revealed_wrong_doors)]
+    second_choice<-first_choice
+    first_choice==prize_door
+})
+sim1_switch_2wrong<-replicate(n,{
+    doors<-c("A","B","C","D","E")
+    prize_door<-sample(doors,1)
+    first_choice<-sample(doors,1)
+    wrong_doors<-doors[doors!=prize_door & doors!=first_choice]
+    revealed_wrong_doors<-sample(wrong_doors,2)
+    remaining_doors<-doors[!(doors %in% revealed_wrong_doors)]
+    second_choice<-sample(remaining_doors[remaining_doors!=first_choice],1)
+    second_choice==prize_door
+})
+sim2_2wrong<-replicate(n,{
+    doors<-c("A","B","C","D","E")
+    prize_door<-sample(doors,1)
+    wrong_doors<-doors[doors!=prize_door]
+    revealed_wrong_doors<-sample(wrong_doors,2)
+    remaining_doors<-doors[!(doors %in% revealed_wrong_doors)]
+    choice<-sample(remaining_doors[!remaining_doors %in% revealed_wrong_doors],1)
+    choice==prize_door
+})
+mean_sim1_stick_2wrong <- mean(sim1_stick_2wrong)
+mean_sim1_switch_2wrong <- mean(sim1_switch_2wrong)
+mean_sim2_2wrong <- mean(sim2_2wrong)
+
+cat("Relatório de Simulação\n")
+cat("----------------------\n\n")
+cat("Número de aberturas de porta: ", n, "\n\n")
+cat("Simulação 1 (mantendo a escolha inicial): ", round(mean_sim1_stick_2wrong*100,2), "% de acertos\n")
+cat("Simulação 1 (mudando a escolha inicial): ", round(mean_sim1_switch_2wrong*100,2), "% de acertos\n")
+cat("Simulação 2 (revelando as portas erradas antes da escolha): ", round(mean_sim2_2wrong*100,2), "% de acertos\n\n")
