@@ -1,0 +1,44 @@
+import random
+random.seed(12)
+
+doors = 5
+revealed_doors = 3
+trials = 10000
+
+win_no_switch = 0
+win_switch = 0
+win_reveal_before_choice = 0
+win_chosen_can_be_revealed = 0
+chosen_door_revealed_count = 0
+
+for _ in range(trials):
+    prize_door = random.randint(0, doors-1)
+    chosen_door = random.randint(0, doors-1)
+    remaining_doors = [i for i in range(doors) if i != chosen_door and i != prize_door]
+    revealed_doors_sample = random.sample(remaining_doors, min(revealed_doors, len(remaining_doors)))
+    switch_door = [i for i in range(doors) if i != chosen_door and i not in revealed_doors_sample][0]
+    win_no_switch += prize_door == chosen_door
+    win_switch += prize_door == switch_door
+ 
+    remaining_doors = [i for i in range(doors) if i != prize_door]
+    revealed_doors_sample = random.sample(remaining_doors, min(revealed_doors, len(remaining_doors)))
+    chosen_door_2 = random.choice([i for i in range(doors) if i not in revealed_doors_sample])
+    switch_door_2 = [i for i in range(doors) if i not in revealed_doors_sample][0]
+    win_chosen_can_be_revealed += prize_door == switch_door_2
+    win_reveal_before_choice += prize_door == chosen_door_2
+    if chosen_door in revealed_doors_sample:
+        chosen_door_revealed_count += 1
+win_switch /= trials
+win_no_switch /= trials
+win_reveal_before_choice /= trials
+win_chosen_can_be_revealed /= trials
+chosen_door_not_revealed = 1 - (chosen_door_revealed_count / trials)
+
+print(f"{trials} Simulações envolvendo {doors} portas e tendo {revealed_doors} revelações erradas")
+print(f"-----------------------------------------------------------------------------------------")
+print(f"Vitórias sem trocar a porta: {win_no_switch:.2%}")
+print(f"Vitórias trocando a porta: {win_switch:.2%}")
+print(f"Vitórias escolhendo a porta depois das revelações erradas: {win_reveal_before_choice:.2%}")
+print(f"Vitórias onde a porta escolhida pode ser uma das reveladas erradas: {win_chosen_can_be_revealed:.2%}")
+print(f"A porta escolhida inicialmente foi revelada errada: {chosen_door_revealed_count} vezes")
+print(f"Chance do método ter a maior eficiência e se aproximar do problema de Monty Hall (as portas reveladas erradas não serem a porta escolhida inicialmente): {chosen_door_not_revealed:.2%}")
