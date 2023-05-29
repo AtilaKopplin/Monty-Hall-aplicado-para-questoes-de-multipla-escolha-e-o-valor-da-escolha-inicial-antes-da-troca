@@ -1,5 +1,4 @@
-# Monty Hall, diferença de revelar portas erradas antes ou depois da escolha
-Monty Hall aplicado para questões de múltipla escolha e o valor em revelar opções erradas antes ou depois da escolha
+# Monty Hall aplicado para questões de múltipla escolha e o valor em revelar opções erradas antes ou depois da escolha inical
 
   No problema de Monty Hall com 3 portas, mudar a escolha inicial após a revelação de uma porta errada resulta em 66,66% de probabilidade de acertar a porta premiada. De modo interessante, maior até do que se a escolha fosse feita dentre apenas 2 portas (50%), revelando uma porta errada antes da escolha inicial. O problema estendido para n portas, como n=100, depois da escolha da porta inicial são abertas 98 portas erradas e torna a conclusão óbvia. Mas abrir 98 portas antes da escolha inicial, restando apenas 2 para se fazer a escolha, resulta na probabilidade de 50% de ganhar o prêmio, demonstrando a importância de se fazer a escolha antes da revelação de portas erradas. A ideia foi verificar o problema estendido para 5 portas e quantas portas reveladas erradas trariam a maior probabilidade de levar o prêmio, se revela-las antes ou depois da escolha inicial iria influenciar nos resultados.
 
