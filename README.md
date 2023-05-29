@@ -13,7 +13,7 @@ Conclusão
 
 3- Então mude para uma das opções que restaram desde que sejam tão ou mais atraentes como a resposta correta do que a opção aleatória escolhida inicialmente.
 
-  Essa abordagem aumenta de 50% para 80% a chance de se acertar a questão quando se consegue eliminar 3 respostas erradas — o melhor cenário para o método com a máxima eliminação de portas erradas.
+  Essa abordagem aumenta aproximadamente de 50% para 80% a chance de se acertar a questão quando se consegue eliminar 3 respostas erradas — o melhor cenário para o método com a máxima eliminação de portas erradas. Embora sempre ocorra um aumento sustancial na chance de acerto com menos de 3 eliminações.
 
 Um dos relatórios com 10 mil simulações com 5 portas foi o seguinte 
 
