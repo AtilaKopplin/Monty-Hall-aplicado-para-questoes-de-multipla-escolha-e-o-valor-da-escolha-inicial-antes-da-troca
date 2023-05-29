@@ -8,7 +8,7 @@ Conclusão
 
 1- Escolha uma opção aleatória dentre as 5 antes mesmo de ler a questão
 
-2- Tente eliminar o máximo de opções erradas — perde-se o valor da técnica quando a escolha aleatória inical estará entre elas — 60% das vezes que conseguir eliminar 3 respostas erradas
+2- Tente eliminar o máximo de opções erradas — perde-se o valor da técnica quando a escolha aleatória inical estará entre elas, 60% das vezes quando conseguir eliminar 3 respostas erradas
 
 3- Então mude para uma das opções que restaram desde que sejam tão ou mais atraentes como a resposta correta do que a opção aleatória escolhida inicialmente.
 
