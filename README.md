@@ -18,25 +18,18 @@ Um dos relatórios com 10 mil simulações com 5 portas foi o seguinte
 
 1 porta errada é revelada
 
-  Mantém a escolha inicial:			              	      19.93 %
-
-  Troca a porta inicial:					                    27.24 %
-
-  A porta errada foi revelada antes da escolha:	      24.86 %
+		Mantém a escolha inicial:                      19.93 %
+		Troca a porta inicial:                         27.24 %
+		A porta errada foi revelada antes da escolha:  24.86 %
 
 2 portas erradas são reveladas
 
-  Mantém a escolha inicial:				                    19.62 %
-
-  Troca a porta inicial:				                    	39.23 %
-
-  As portas erradas foram reveladas antes da escolha:	33.43 %
-
+		Mantém a escolha inicial:                            19.62 %
+		Troca a porta inicial:                               39.23 %
+		As portas erradas foram reveladas antes da escolha:  33.43 %
 
 3 portas erradas são reveladas
 
-  Mantém a escolha inicial:			                    	20.17 %
-
-  Troca a porta inicial:				                    	79.96 %
-
-  As portas erradas foram reveladas antes da escolha:	50.3 %
+		Mantém a escolha inicial:                            20.17 %
+		Troca a porta inicial:                               79.96 %
+		As portas erradas foram reveladas antes da escolha:  50.3 %
