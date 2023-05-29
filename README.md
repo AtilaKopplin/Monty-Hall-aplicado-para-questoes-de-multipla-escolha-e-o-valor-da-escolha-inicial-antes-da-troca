@@ -8,7 +8,9 @@ Conclusão
   O problema de Monty Hall se define em 3 atos — A escolha, a eliminação de portas erradas e a troca no final. O objetivo é trazer e aplicar essa estrutura em uma abordagem para auxiliar em questões de múltiplas escolhas com 5 opções:
 
 1- Escolha uma opção aleatória antes mesmo de ler a questão
+
 2- Tente eliminar o máximo de opções erradas — perde-se o valor da técnica quando a escolha aleatória inical estará entre elas — 60% das vezes que conseguir eliminar 3 respostas erradas
+
 3- Então mude para uma das opções que restaram desde que sejam tão ou mais atraentes como a resposta correta do que a opção aleatória escolhida inicialmente.
 
   Essa abordagem aumenta de 50% para 80% a chance de se acertar a questão quando se consegue eliminar 3 respostas erradas — o melhor cenário para o método com a máxima eliminação de portas erradas.
